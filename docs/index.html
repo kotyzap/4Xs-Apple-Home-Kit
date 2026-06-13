@@ -93,6 +93,14 @@
   }
   .hero-media { margin-top: 40px; }
 
+  /* Responsive 16:9 YouTube embed */
+  .video-embed {
+    position: relative; width: 100%; aspect-ratio: 16 / 9; margin-top: 8px;
+    border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border);
+    box-shadow: var(--shadow); background: #000;
+  }
+  .video-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
   /* Portrait iPhone screenshots, shown in a phone frame */
   .phone {
     width: 100%; max-width: 250px; aspect-ratio: 1179 / 2556; object-fit: cover;
@@ -167,6 +175,7 @@
   <div class="wrap nav-inner">
     <div class="brand"><span class="dot"></span> 4Xs Apple Home Kit</div>
     <nav class="nav-links">
+      <a href="#demo">Demo</a>
       <a href="#features">Features</a>
       <a href="#pairing">Pairing</a>
       <a href="#inhome">In Home</a>
@@ -190,7 +199,7 @@
       </p>
       <div class="cta">
         <a class="btn btn-primary" href="#install">Get started →</a>
-        <a class="btn btn-ghost" href="#pairing">See it in action</a>
+        <a class="btn btn-ghost" href="#demo">Watch the demo</a>
       </div>
 
       <div class="hero-media">
@@ -198,6 +207,16 @@
           <img class="wide" data-img="IMG_4411.PNG" alt="Full-screen live view of AXIS M1137 in the Apple Home app" />
           <figcaption>Full‑screen live view of an AXIS M1137, streaming straight from the camera into the Apple Home app.</figcaption>
         </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="demo">
+    <div class="wrap">
+      <h2>See it in action</h2>
+      <p class="section-sub">A quick walkthrough — pairing the camera, then watching live video and motion alarms land in the Apple Home app.</p>
+      <div class="video-embed">
+        <iframe src="https://www.youtube-nocookie.com/embed/UpButRx2cKg?si=JJihLys8pemW0_vO" title="4Xs Apple Home Kit — demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
     </div>
   </section>
@@ -223,11 +242,11 @@
       <p class="section-sub">The whole thing is configured from a single panel inside CamScripter — including a live pairing QR you scan straight into the Home app.</p>
       <div class="shots-2">
         <figure>
-          <img data-img="ui-light.png" alt="Settings UI, light theme" />
+          <img data-img="4Xs-AppleHomeKit-Light.png" alt="Settings UI, light theme" />
           <figcaption>Light theme</figcaption>
         </figure>
         <figure>
-          <img data-img="ui-dark.png" alt="Settings UI, dark theme" />
+          <img data-img="4Xs-AppleHomeKit-Dark.png" alt="Settings UI, dark theme" />
           <figcaption>Dark theme</figcaption>
         </figure>
       </div>
